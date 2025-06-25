@@ -15,13 +15,8 @@ spec:
         - podSelector:
             matchLabels:
               app: b
-    ingress:
-      - to:
-          - podSelector:
-              matchLabels:
-                app: b
-    egress:
-      - to:
-          - podSelector:
-              matchLabels:
-                app: b
+  egress:
+    - to:
+        - podSelector:
+            matchLabels:
+              app: b
