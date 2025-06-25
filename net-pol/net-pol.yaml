@@ -2,7 +2,7 @@ apiVersion: networking.k8s.io/v1
 kind: NetworkPolicy
 metadata:
   name: a-to-b
-  namespace: namespace-net-pol
+  namespace: namespace-pod
 spec:
   podSelector:
     matchLabels:

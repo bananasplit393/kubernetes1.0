@@ -1,6 +1,0 @@
-apiVersion: v1
-kind: Namespace
-metadata:
-  name: namespace-net-pol
-  labels:
-    name: ns-net-pol
