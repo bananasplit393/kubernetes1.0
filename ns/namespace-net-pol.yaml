@@ -3,4 +3,4 @@ kind: Namespace
 metadata:
   name: namespace-net-pol
   labels:
-    name: namespace-net-pol
+    name: ns-net-pol

@@ -1,0 +1,27 @@
+apiVersion: v1
+kind: NetworkPolicy
+metadata:
+  name: a-to-b
+  namespace: namespace-net-pol
+  spec:
+    podSelector:
+      matchLabels:
+        app: a
+    policyTypes:
+      - ingress
+      - egress
+    ingress:
+      - from:
+          - podSelector:
+            matchLabels:
+              app: b
+    egress:
+      - to:
+          - podSelector:
+              matchLabels:
+                app: b
+    egress:
+      - to:
+          - podSelector:
+              matchLabels:
+                app: b
